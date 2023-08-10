@@ -1,0 +1,253 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sourav Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!--bootstrap cdn-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!--bootstrap icon-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <!--custom css-->
+        <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+        <!--google font for sec1-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Bungee+Spice&family=Luckiest+Guy&family=Oswald&family=Pacifico&family=Tilt+Prism&display=swap" rel="stylesheet">
+        <style>
+            section{
+                min-height:100vh;
+            }
+            #center{
+                display:grid;
+                justify-content:center;
+                align-items:center;
+                
+            }
+            .dark-mode {
+                background-color: #1f1f1f;
+                color: white;
+              }
+            .qualification{
+              margin-top:100px;;
+            }
+              
+            {% comment %} #darkModeToggle {
+            background-color:black;
+            color: white;
+            }
+            
+            #darkModeToggle.dark-mode {
+            background-color:white;
+            color: black;
+            }  {% endcomment %}
+
+        </style>
+    </head>
+    <body>
+        <nav class="navbar ">
+            <div class="container-fluid">
+                <div>
+                    <img src={% static 'images/sourav2.jpg' %} alt="Logo" width="75" height="75" class="d-inline-block align-text-top rounded-circle">
+                    <h4><b>Sourav.T</b></h4>
+                </div>
+                <button class='btn btn-sm btn-outline-secondary' id="darkModeToggle" onclick="toggleDarkMode()">Darkmode</button>
+            </div>
+          </nav>
+        <section class='container'>
+            <div id='center'>
+                <div class='d-block w-100'>
+                    <h1 style="margin-top:30%;" id='txt'> <span class='' id='welcome_txt'>Welcome to My </span><span class='mx-3 color-changing-text' id='portfolio_txt'>Portfolio</span> </h1>
+                </div>
+                <br>
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item mx-2 mb-2">
+                            <a class="nav-link active retro" aria-current="page" href="#About">About</a>
+                          </li>
+                          <li class="nav-item mx-2 mb-2">
+                            <a class="nav-link  retro"  href="#qualification">Qualification</a>
+                          </li>
+                          <li class="nav-item mx-2 mb-2">
+                            <a class="nav-link  retro" href="#experiance">Experiance</a>
+                          </li>
+                          <li class="nav-item mx-2 mb-2">
+                            <a class="nav-link  retro" href="#contact">Contact</a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+               
+            </div>
+        </section>
+        <section id='About' class='container'>
+            <div class='row shadow p-3'>
+                <h4><span class='text-danger'>About Me</span> <i class="bi bi-pin-angle-fill"></i></h4>
+                <div class='col-sm-6'>
+                  <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
+                    <img src={% static 'images/sourav2.jpg' %} class='d-block w-100' />
+                  </div>
+                </div>
+                <div class='col-sm-6 '>
+                    <h5>Hello everyone ,</h5>
+                    <p>My name is sourav, and I'm delighted to have this opportunity to introduce myself. I'm a passionate individual with a strong curiosity about the world around me.</P>
+                    <p>Professionally, I have a background in computer science and software engineering. Over the years, I've worked on various projects that involve web development and mobile applications. I find great joy in solving complex problems and creating user-friendly solutions that make a positive impact on people's lives.</p> 
+                    <p>Aside from my technical interests, I'm an avid reader and a lifelong learner. I believe in the power of knowledge and enjoy exploring topics in history, psychology, and philosophy. Learning from different perspectives has allowed me to grow both personally and professionally.</p>
+                    <p>When I'm not engrossed in code or reading, you can find me outdoors. I'm an enthusiastic hiker and nature lover. There's something magical about being surrounded by the beauty of the natural world that rejuvenates my spirit.</p>
+                    <p>I also love connecting with people and building meaningful relationships. Whether it's collaborating with a team on a project or engaging in discussions about the latest trends in technology, I'm always eager to learn from others and share my experiences.</p>
+                    <p>In my downtime, I enjoy cooking and experimenting with new recipes. There's nothing quite like preparing a delicious meal and sharing it with friends and family.</p> 
+                    <p>I'm thrilled to be a part of this community and look forward to getting to know each one of you better. If you ever want to talk tech, explore new ideas, or simply have a friendly chat, don't hesitate to reach out.</p>
+                    <p>Thank you for your time, and I'm excited to embark on this journey together!</p>
+                    <p>Best regards,</p>
+                    <p>Sourav.T</p>
+                </div>
+            </div>
+
+        </section>
+        <section id='qualification' class='container mt-2'>
+          <div class='shadow p-3 qualification'>
+            <h4><span class='text-danger'>Qualification</span> <i class="bi bi-pin-angle-fill"></i></h4>
+            <br>
+            <div class='row'>
+              <div class='col-sm-3'>
+                <div class="flip-box">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                      <h1 class='mt-5'>10 th</h1>
+                    </div>
+                    <div class="flip-box-back">
+                      <h5>Ems Smaraka Higher Secondery School Pappinisseri</h5>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='col-sm-3'>
+                <div class="flip-box">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                      <h1 class='mt-5'>+2 </h1>
+                    </div>
+                    <div class="flip-box-back">
+                      <h5>Ems Smaraka Higher Secondery School Pappinisseri</h5>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='col-sm-3'>
+                <div class="flip-box">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                      <h1 class='mt-5'>Degree</h1>
+                    </div>
+                    <div class="flip-box-back">
+                      <h5>Collage of applied science Neruvambram(IHRD)</h5>
+                      <p>Bcom computer application graduated under kannur university</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='col-sm-3'>
+                <div class="flip-box">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                      <h1 class='mt-5'>Stud counsil</h1>
+                    </div>
+                    <div class="flip-box-back">
+                      <h5>Unique Occassio Tech kochi</h5>
+                      <p>Completed Python fullstack development course </p>
+                      <p>Passed Studcounsil's python exam</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolorum quia et, consequatur corporis harum esse ipsam laborum nemo veniam dignissimos, exercitationem voluptatem praesentium iste perferendis, pariatur eius doloribus suscipit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quidem dignissimos praesentium non repellat perspiciatis quia ex odit laudantium necessitatibus veniam sint sunt, nesciunt, ratione blanditiis fugiat et nam placeat alias labore? Sed aliquid nesciunt, velit commodi id nam laboriosam ullam non sint odio unde blanditiis veniam. Atque temporibus odit vitae sint impedit nesciunt vel magnam amet. Amet, qui enim. Quis nulla minima sequi facere cum ducimus cumque quae, possimus, perferendis aliquid quibusdam. Blanditiis amet debitis dicta quos, totam nihil suscipit cupiditate libero eaque. Iste, laborum molestias unde obcaecati accusamus inventore animi, nostrum odio perferendis sint tempore, quas deleniti debitis?</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus voluptates earum, neque, pariatur molestiae quos culpa eum excepturi soluta, ad minus suscipit molestias dignissimos doloremque? Incidunt, consequuntur ipsa nihil dignissimos assumenda placeat expedita quia nobis totam fuga porro quas tenetur facere esse, minima eum explicabo, quae non nesciunt! Aliquid, suscipit.</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque ratione dolorem, consectetur, excepturi rem hic accusantium eum quam laborum ipsum obcaecati blanditiis ea ex asperiores aliquid repellendus officia adipisci labore! Voluptate dignissimos ea dolore omnis cum itaque totam obcaecati delectus impedit tenetur alias libero ab optio ullam repellat dolores facilis quidem aspernatur, sed quibusdam? Sapiente architecto numquam quaerat unde dolor alias ad culpa impedit tenetur? Nulla ad voluptatibus temporibus perferendis, eligendi maxime ea corporis labore quisquam possimus doloremque unde officiis magni voluptas quo eius iusto accusamus corrupti perspiciatis sint quae quis sequi sunt! Beatae rem nemo natus odit, tempora distinctio?</p>
+            </div>
+          </div>
+        </section>
+        <section id='experiance' class='container'>
+            <div class='shadow p-3'>
+              <h4><span class='text-danger'>Experiance</span> <i class="bi bi-pin-angle-fill"></i></h4>
+              <h1>Fresher</h1>
+              <p>Currently i have no work experiance </p>
+              <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolorum quia et, consequatur corporis harum esse ipsam laborum nemo veniam dignissimos, exercitationem voluptatem praesentium iste perferendis, pariatur eius doloribus suscipit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quidem dignissimos praesentium non repellat perspiciatis quia ex odit laudantium necessitatibus veniam sint sunt, nesciunt, ratione blanditiis fugiat et nam placeat alias labore? Sed aliquid nesciunt, velit commodi id nam laboriosam ullam non sint odio unde blanditiis veniam. Atque temporibus odit vitae sint impedit nesciunt vel magnam amet. Amet, qui enim. Quis nulla minima sequi facere cum ducimus cumque quae, possimus, perferendis aliquid quibusdam. Blanditiis amet debitis dicta quos, totam nihil suscipit cupiditate libero eaque. Iste, laborum molestias unde obcaecati accusamus inventore animi, nostrum odio perferendis sint tempore, quas deleniti debitis?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus voluptates earum, neque, pariatur molestiae quos culpa eum excepturi soluta, ad minus suscipit molestias dignissimos doloremque? Incidunt, consequuntur ipsa nihil dignissimos assumenda placeat expedita quia nobis totam fuga porro quas tenetur facere esse, minima eum explicabo, quae non nesciunt! Aliquid, suscipit.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque ratione dolorem, consectetur, excepturi rem hic accusantium eum quam laborum ipsum obcaecati blanditiis ea ex asperiores aliquid repellendus officia adipisci labore! Voluptate dignissimos ea dolore omnis cum itaque totam obcaecati delectus impedit tenetur alias libero ab optio ullam repellat dolores facilis quidem aspernatur, sed quibusdam? Sapiente architecto numquam quaerat unde dolor alias ad culpa impedit tenetur? Nulla ad voluptatibus temporibus perferendis, eligendi maxime ea corporis labore quisquam possimus doloremque unde officiis magni voluptas quo eius iusto accusamus corrupti perspiciatis sint quae quis sequi sunt! Beatae rem nemo natus odit, tempora distinctio?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque ratione dolorem, consectetur, excepturi rem hic accusantium eum quam laborum ipsum obcaecati blanditiis ea ex asperiores aliquid repellendus officia adipisci labore! Voluptate dignissimos ea dolore omnis cum itaque totam obcaecati delectus impedit tenetur alias libero ab optio ullam repellat dolores facilis quidem aspernatur, sed quibusdam? Sapiente architecto numquam quaerat unde dolor alias ad culpa impedit tenetur? Nulla ad voluptatibus temporibus perferendis, eligendi maxime ea corporis labore quisquam possimus doloremque unde officiis magni voluptas quo eius iusto accusamus corrupti perspiciatis sint quae quis sequi sunt! Beatae rem nemo natus odit, tempora distinctio?</p>
+              </div>
+            </div>
+        </section>
+        <section id="contact" class="container">
+          <div>
+            <h4><span class='text-danger'>Contact</span> <i class="bi bi-pin-angle-fill"></i></h4>
+            <br>
+            <div id="center" >
+              <div class="d-block w-100" >
+                <form action="" method="POST">
+                  <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Name" name="name" >
+                  </div>
+                  <div class="mb-3" >
+                    <input type="text" class="form-control" placeholder="Firm Name" name="firm_name" >
+                  </div>
+                  <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Email" name="email" >
+                  </div>
+                  <div class="mb-3">
+                    <input type="number" class="form-control" placeholder="Contact number" name="number" >
+
+                  </div>
+                  <div class="text-center">
+                    <input type="submit" value="Sent" class="btn retro">
+                  </div>
+                </form>
+              </div>
+            </div>
+            
+
+            <br>
+            <div style="margin-left: 45%; margin-top: 25%;" >
+              
+              <a class="btn btn-primary mb-2" href=""><i class="bi bi-facebook"></i></a>
+              <a class="btn btn-danger mb-2" href=""><i class="bi bi-instagram"></i></a>
+              <a class="btn btn-success mb-2" href=""><i class="bi bi-envelope-at"></i></a>
+
+            </div>
+            
+          </div>
+        </section>
+        
+
+
+
+
+
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Scroll to top</button>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <!--gsap cdn-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src={% static 'js/custom.js' %} async defer></script>
+
+      </body>
+</html>
